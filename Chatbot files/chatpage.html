@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Chat</title>
+  <link rel="stylesheet" type="text/css" href="chat.css" />
+  <style>
+    {source}
+  </style>
+   <style>        
+          .header {
+            color: white;
+          background-color: #000000;
+            padding: 8px 0;
+            margin-bottom: 5px;
+            flex: none;
+            position: relative;
+            z-index: 12;
+            background-size: cover;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+            background-position: 50%; 
+            border-radius: 10px
+         }
+         .intercom-reaction-picker {
+            backface-visibility: hidden;
+            padding: 12px;
+            text-align: center;
+            color: #777;
+            background-color: #f0f3f5;
+            margin: 60px -44px -44px -44px;
+            border-radius: 8px; }
+            @media (max-width: 1023px) {
+              .intercom-reaction-picker {
+                margin: 30px -16px -16px -16px; } }
+            @media (max-width: 600px) {
+              .intercom-reaction-picker {
+                margin: 30px -8px -12px -8px;
+                border-radius: 8px; } }
+            .intercom-reaction-picker.intercom-reaction-picker-with-prompt {
+              height: 74px; }
+            .intercom-reaction-picker .intercom-reaction-prompt {
+              padding-top: 9px;
+              padding-bottom: 4px;
+              text-align: center; }
+            .intercom-reaction-picker .intercom-reaction {
+              background: none;
+              color: inherit;
+              border: none;
+              padding: 0;
+              font: inherit;
+              cursor: pointer;
+              outline: none;
+              width: 50px;
+              height: 100%;
+              display: inline-block;
+              text-align: center;
+              font-size: 32px;
+              transition: transform 0.16s cubic-bezier(0.65, 0.61, 0.18, 1.8) 0.02s, filter 0.32s linear;
+              cursor: pointer;
+              transform-origin: 50% 60%; }
+              .intercom-reaction-picker .intercom-reaction span {
+                cursor: pointer;
+                line-height: 55px; }
+              .intercom-reaction-picker .intercom-reaction:hover, .intercom-reaction-picker .intercom-reaction:focus {
+                transform: scale(1.32);
+                transition: transform .04s; }
+              .intercom-reaction-picker .intercom-reaction:active {
+                transform: scale(1.4);
+                transition: transform .04s; }
+          
+          .intercom-reaction-picker-reaction-selected .intercom-reaction {
+            filter: grayscale(100%); }
+          .intercom-reaction-picker-reaction-selected .intercom-reaction-selected {
+            filter: grayscale(0%);
+            transform: scale(1.32); }
+            .intercom-reaction-picker-reaction-selected .intercom-reaction-selected:hover {
+              transform: scale(1.32); }
+            .intercom-reaction-picker-reaction-selected .intercom-reaction-selected:active {
+              transform: scale(1.32); }
+         
+        </style>
+  </head>
+    <body class="header__lite">
+      <header class="header">
+    <div class="container header__container o__ltr" dir="ltr">
+      <div class="content">
+        <div class="mo o__centered o__reversed header__meta_wrapper">
+          <div class="title">
+            <style>
+              @import url("https://fonts.intercomcdn.com/proxima-nova/proxima-nova-all.css");
+              .title{
+                  margin: 10 px;
+                  font-family: "proxima-nova"; 
+                  font-size: 20px;  
+                  position: left;
+              }
+            </style>
+           
+            <p style="color:#ffffff">Chatbot - Main</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</head>
+<body>
+  <div class="container">   
+    <header>
+      <h1>ChatBot 3</h1>
+    </header>
+    <div class="chat-area">
+      <div class="ai message-bubble">
+        <p class="message-text">Hello! How can I help you today?</p>
+        <p class="message-timestamp">10:15 AM</p>
+      </div>
+      <div class="user message-bubble">
+        <p class="message-text">Hi there! I'm looking for information on a specific topic.</p>
+        <p class="message-timestamp">10:16 AM</p>
+      </div>
+      <div class="ai message-bubble">
+        <p class="message-text">I've limited knowledge regarding recent data, less than a year !</p>
+        <p class="message-timestamp">10:17 AM</p>
+      </div>
+    </div>
+    <form class="input-form" action="http://127.0.0.1:5000/send-message" method="post">
+      <input type="text" name="message" placeholder="Enter your message" />
+      <button type="submit">Send</button>
+    </form>
+    
+  </div>
+
+<div class="intercom-reaction-picker" dir="ltr">
+    
+   <div class="intercom-reaction-prompt">Hope to see you again!</div>
+
+     <button class="intercom-reaction" data-reaction-text="disappointed" tabIndex="0" aria-label="Disappointed Reaction">
+       <span data-emoji="disappointed" title="Sad">
+       </span>
+     </button>
+     <button class="intercom-reaction" data-reaction-text="neutral_face" tabIndex="0" aria-label="Neutral face Reaction">
+       <span data-emoji="neutral_face" title="Neutral">
+       </span>
+     </button>
+     <button class="intercom-reaction" data-reaction-text="smiley" tabIndex="0" aria-label="Smiley Reaction">
+       <span data-emoji="smiley" title="Happy">
+       </span>
+     </button>
+ </div>
+
+</div>
+
+</section>
+</div>
+   </div>
+ </body>
+
+//Using the prebuilt smileys
+<script src="https://static.intercomassets.com/assets/help_center-4bd5f02b3f728fa6a162738af841aa465b18d1f29be03fbbffe96556a1787882.js" nonce="1GMML1nkQwfWnonk+RozP7Q2RE+B4NAnCF5yURxaRPk=">
+
+</script>
+
+</body>
+</html>

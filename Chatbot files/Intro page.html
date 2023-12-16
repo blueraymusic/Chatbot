@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+ <html lang="en">
+    
+<head>
+    <link rel="stylesheet" href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\Introcss.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+         
+        }
+
+        #click{
+          display: none;
+
+        }
+        label{
+          position: fixed;
+          right: 30px;
+          bottom: 20px;
+          height: 55px;
+          width: 55px;
+          background: -webkit-linear-gradient(left,  #a259ff, #377bf0);
+          text-align: center;
+          line-height: 55px;
+          border-radius: 50px;
+          font-size: 30px;
+          color: #fff;
+          cursor: pointer;
+          z-index: 9999;
+
+        }
+        label i{
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 0.4s ease;
+          z-index: 9999;
+        }
+        label i.fas{
+          opacity: 0;
+          pointer-events: none;
+        }
+        label :hover{
+          position: fixed;
+          right: 30px;
+          bottom: 20px;
+          height: 55px;
+          width: 55px;
+          text-align: center;
+          line-height: 55px;
+          border-radius: 50px;
+          font-size: 30px;
+          color: #fff;
+          cursor: pointer;
+          z-index: 9999;
+          background: -webkit-linear-gradient(left,  #cea9ff, #87b1f9);
+        }
+        #click:checked ~ label i.fas{
+          opacity: 1;
+          pointer-events: auto;
+          transform: translate(-50%, -50%) rotate(180deg);
+        }
+        #click:checked ~ label i.fab{
+          opacity: 0;
+          pointer-events: none;
+          transform: translate(-50%, -50%) rotate(180deg);
+        }
+        .wrapper{
+          position: fixed;
+          right: 30px;
+          bottom: 0px;
+          max-width: 400px;
+          z-index: 9999;
+          background: #fff;
+          border-radius: 15px;
+          box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+          opacity: 0;
+          pointer-events: none;
+          transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+        }
+        #click:checked ~ .wrapper{
+          opacity: 1;
+          bottom: 85px;
+          pointer-events: auto;
+        }
+        .wrapper .head-text{
+          line-height: 60px;
+          color: #fff;
+          border-radius: 15px 15px 0 0;
+          padding: 0 20px;
+          font-weight: 500;
+          font-size: 20px;
+          background: -webkit-linear-gradient(left,  #a259ff, #377bf0);
+        }
+        .wrapper .chat-box{
+          padding: 20px;
+          width: 100%;
+        }
+        .chat-box .desc-text{
+          color: #515365;
+          text-align: center;
+          line-height: 25px;
+          font-size: 9px;
+          font-weight: 500;
+        }
+        .chat-box form{
+          padding: 10px 15px;
+          margin: 20px 0;
+          border-radius: 25px;
+          border: 1px solid lightgrey;
+        }
+        .chat-box form .field{
+          height: 50px;
+          width: 100%;
+          margin-top: 20px;
+        }
+        .chat-box form .field:last-child{
+          margin-bottom: 15px;
+        }
+        form .field input,
+        form .field button,
+        form .textarea textarea{
+          width: 100%;
+          height: 100%;
+          padding-left: 20px;
+          border: 1px solid lightgrey;
+          outline: none;
+          border-radius: 25px;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+        form .field input:focus,
+        form .textarea textarea:focus{
+          border-color: #b1aeaf;
+        }
+        form .field input::placeholder,
+        form .textarea textarea::placeholder{
+          color: silver;
+          transition: all 0.3s ease;
+        }
+        form .field input:focus::placeholder,
+        form .textarea textarea:focus::placeholder{
+          color: lightgrey;
+        }
+        .chat-box form .textarea{
+          height: 70px;
+          width: 100%;
+        }
+        .chat-box form .textarea textarea{
+          height: 100%;
+          border-radius: 50px;
+          resize: none;
+          padding: 15px 20px;
+          font-size: 16px;
+        }
+        .chat-box form .field button{
+          border: none;
+          outline: none;
+          cursor: pointer;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          background: -webkit-linear-gradient(left,  #a259ff, #377bf0);
+          transition: all 0.3s ease;
+        }
+        .chat-box form .field button:active{
+          transform: scale(0.97);
+        }
+    </style>
+    <link rel="shortcut icon" href="C:\Users\minas\Desktop\Bot_face.png" sizes= "42x42">
+
+</head>
+<body >
+    <header class="fixed w-full">
+        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900" class="border-radius=50px">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+                <a href="#" class="flex items-center">
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                 <img src="C:\Users\minas\Desktop\vscode%20(Adel\Chatbot%20files\Logo 2.png" class="h-12 mr-3 sm:h-14" alt="Chatbot Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Chat </span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                     <a href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\Loginpage.html" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Log In</a>
+                </div>
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\More_page.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">More</a>
+                        </li>
+                        <li>
+                          <a href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\code.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Code</a>
+                      </li>
+                        <li>
+                            <a href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\AboutUs.html" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
+                        </li>
+
+                        <!--Addign the last row in order to fourth row to push the whole to the middle-->
+                        <li>
+                          <a href="" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">            </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Start block -->
+    <section class="bg-gray-200  dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Digital Chat <br>Questions & Answers</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"> Using advanced technology like NLP and ML, our chatbots automate tasks, improve customer service and increase efficiency across industries. Contact us to create a custom chatbot solution for your business.</p>
+                <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                    <a href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\Get_started.html" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        <svg class="w-4 h-4 mr-2" id="Layer_1" viewBox="0 0 200 300" width="1667" height="2500"><style type="text/css">.st0{fill:#0acf83}.st1{fill:#a259ff}.st2{fill:#f24e1e}.st3{fill:#ff7262}.st4{fill:#1abcfe}</style></svg> Get started 
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\Chatbot.png" alt="hero image">
+            </div>                
+        </div>
+    </section>
+
+    <!-- Start of footer-->
+    <hr style="border-color: rgb(169, 166, 166)">
+    <body >
+      <input type="checkbox" id="click">
+      <label for="click">
+      
+      <i class="fab fa-facebook-messenger"></i>
+      <i class="fas fa-times"></i>
+      </label>
+          <div class="wrapper">
+             <div class="head-text">
+                Let's chat? - Chatbot
+             </div>
+             <div class="chat-box">
+                <div class="desc-text">
+                  <p id="error-message">Please fill out the form below to start chatting !</p>
+                </div>
+                <form class ="User_submit" action="http://127.0.0.1:5000/send-data" method="post" id="Form" >  <!--change later action="http://127.0.0.1:5000/send-data" method="post"-->
+                   <div class="field">
+                      <input type="email" placeholder="Your Email" name="name" id="email" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" placeholder="Your Password" name="password" id="password" required>
+                   </div>
+                   <div class="field textarea">
+                      <textarea cols="30" rows="10" placeholder="Purpose (eg. learn, information, etc).." name ="purpose" required></textarea>
+                   </div>
+                   <div class="field">
+                      <button type="submit">Start Chat</button>
+                   </div>
+                </form>
+               
+  
+             </div>
+          </div>
+    </body>
+    
+          <!-- Form -->
+          <script>
+            const s = document.querySelector('#Form');
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+      
+            s.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const email = emailInput.value;
+                const password = passwordInput.value;
+      
+                if (password.length < 8) {
+                  const errorMessageElement = document.getElementById('error-message');
+                  errorMessageElement.textContent = "Invalid Password or Email, password must be at least 8 characters long !";
+        // change this line later for security purposes 
+                } else if (email =='admin@gmail.com' && password == 'admin1234'){
+                  window.location.href = 'C://Users//minas//Desktop//vscode (Adel//Chatbot files//chatpage.html'
+      
+                }else {
+                  window.location.href= 'C://Users//minas//Desktop//vscode (Adel//Chatbot files//Loginpage.html'
+                }
+             });
+      
+          </script>
+          
+    
+    <footer class="bg-gray-200 dark:bg-gray-800">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+                <div class ="Mar">
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"></h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="#" class=" hover:underline"></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <style>
+                  #hov:hover {
+                    color: rgb(182, 182, 182);
+                    cursor: pointer;
+                    
+                  }
+                </style>
+                    
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        
+                        <li class="mb-4" >
+                           <span id="hov">Contact Us</span>
+                        </li>
+                        <li class="mb-4">
+                          <span id="hov">About us</span>
+                         </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                           <span id="hov">Privacy Policy</span>
+                        </li>
+                        <li class="mb-4">
+                          <span id="hov">Terms</span>                         
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h3>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                          <span id="hov">About us</span>                             
+                        </li>                       
+                        <li class="mb-4">                            
+                            <span id="hov">Blog</span>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class="text-center">
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© Chatbot Company. Built by The Goat 🐐</a>
+                </span>
+             </div>
+        </div>
+    </footer>
+</body>
+</html>

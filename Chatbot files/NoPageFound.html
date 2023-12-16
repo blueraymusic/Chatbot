@@ -1,0 +1,312 @@
+
+<!doctype html>
+<html lang="en" data-direction="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Help Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://static.intercomassets.com/assets/help_center-ef66cd65cb3a4e4a29c89fb6080455cd7ce5e70980917a02cf959f8b71f94965.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    #click{
+      display: none;
+
+    }
+    label{
+      position: fixed;
+      right: 30px;
+      bottom: 20px;
+      height: 55px;
+      width: 55px;
+      background: -webkit-linear-gradient(left,  #a259ff, #377bf0);
+      text-align: center;
+      line-height: 55px;
+      border-radius: 50px;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+      z-index: 9999;
+
+    }
+    label i{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.4s ease;
+      z-index: 9999;
+    }
+    label i.fas{
+      opacity: 0;
+      pointer-events: none;
+    }
+    #click:checked ~ label i.fas{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    #click:checked ~ label i.fab{
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    .wrapper{
+      position: fixed;
+      right: 30px;
+      bottom: 0px;
+      max-width: 400px;
+      z-index: 9999;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    }
+    #click:checked ~ .wrapper{
+      opacity: 1;
+      bottom: 85px;
+      pointer-events: auto;
+    }
+    .wrapper .head-text{
+      line-height: 60px;
+      color: #fff;
+      border-radius: 15px 15px 0 0;
+      padding: 0 20px;
+      font-weight: 500;
+      font-size: 20px;
+      background: -webkit-linear-gradient(left,  #a259ff, #377bf0);
+    }
+    .wrapper .chat-box{
+      padding: 20px;
+      width: 100%;
+    }
+    .chat-box .desc-text{
+      color: #515365;
+      text-align: center;
+      line-height: 25px;
+      font-size: 9px;
+      font-weight: 500;
+    }
+    .chat-box form{
+      padding: 10px 15px;
+      margin: 20px 0;
+      border-radius: 25px;
+      border: 1px solid lightgrey;
+    }
+    .chat-box form .field{
+      height: 50px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .chat-box form .field:last-child{
+      margin-bottom: 15px;
+    }
+    form .field input,
+    form .field button,
+    form .textarea textarea{
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      border: 1px solid lightgrey;
+      outline: none;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    form .field input:focus,
+    form .textarea textarea:focus{
+      border-color: #b1aeaf;
+    }
+    form .field input::placeholder,
+    form .textarea textarea::placeholder{
+      color: silver;
+      transition: all 0.3s ease;
+    }
+    form .field input:focus::placeholder,
+    form .textarea textarea:focus::placeholder{
+      color: lightgrey;
+    }
+    .chat-box form .textarea{
+      height: 70px;
+      width: 100%;
+    }
+    .chat-box form .textarea textarea{
+      height: 100%;
+      border-radius: 50px;
+      resize: none;
+      padding: 15px 20px;
+      font-size: 16px;
+    }
+    .chat-box form .field button{
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      background: -webkit-linear-gradient(left,  #a259ff, #377bf0);
+      transition: all 0.3s ease;
+    }
+    .chat-box form .field button:active{
+      transform: scale(0.97);
+    }
+</style>
+<link rel="shortcut icon" href="C:\Users\minas\Desktop\Bot_face.png" sizes= "42x42">
+
+  </head>
+
+  <body class="">
+    <header class="header">
+  <div class="container header__container o__ltr" dir="ltr">
+    <div class="content">
+      <div class="mo o__centered o__reversed header__meta_wrapper">
+        <div class="mo__body header__site_name">
+          <div class="header__logo">
+            <a href="/en/">
+                <!--Head logo but no logo yet-->
+            </a>
+          </div>
+        </div>
+        <div class="mo__aside">
+          <div class="header__links">
+<!-- head link but no link yet-->         
+          </div>
+        </div>
+      </div>
+          <h1 class="header__headline">Help Center</h1>
+      <form action="#" autocomplete="off" class="header__form search">
+        <input type="text" autocomplete="off" class="search__input js__search-input o__ltr" placeholder="Search for articles..." tabindex="1" name="q" value="">
+        <div class="search_icons">
+          <button type="submit" class="search__submit o__ltr"></button>
+
+      </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="container">
+      <div class="content educate_content"><section class="section">
+    <div style="text-indent: 13em; margin-top: 3em;" class="g__space">
+       Sorry, We couldn't find something related to your query !
+    </div>
+    
+    
+    </div>
+</section>
+</div>
+    </div>
+
+    <body >
+      <input type="checkbox" id="click">
+      <label for="click">
+       
+      <i class="fab fa-facebook-messenger"></i>
+      <i class="fas fa-times"></i>
+      </label>
+          <div class="wrapper">
+             <div class="head-text">
+                Let's chat? - Chatbot
+             </div>
+             <div class="chat-box">
+                <div class="desc-text">
+                  <p id="error-message">Please fill out the form below to start chatting !</p>
+                </div>
+                <form class ="User_submit" action="http://127.0.0.1:5000/send-data" method="post" id="Form" >  <!--change later action="http://127.0.0.1:5000/send-data" method="post"-->
+                   <div class="field">
+                      <input type="email" placeholder="Your Email" name="name" id="email" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" placeholder="Your Password" name="password" id="password" required>
+                   </div>
+                   <div class="field textarea">
+                      <textarea cols="30" rows="10" placeholder="Purpose (eg. learn, information, etc).." name ="purpose" required></textarea>
+                   </div>
+                   <div class="field">
+                      <button type="submit">Start Chat</button>
+                   </div>
+                </form>
+               
+  
+             </div>
+          </div>
+    </body>
+
+    <!-- Form -->
+    <script>
+      const s = document.querySelector('#Form');
+      const emailInput = document.getElementById("email");
+      const passwordInput = document.getElementById("password");
+
+      s.addEventListener('submit', (event) => {
+          event.preventDefault();
+          const email = emailInput.value;
+          const password = passwordInput.value;
+
+          if (password.length < 8) {
+            const errorMessageElement = document.getElementById('error-message');
+            errorMessageElement.textContent = "Invalid Password or Email, password must be at least 8 characters long !";
+  // change this line later for security purposes 
+          } else if (email =='admin@gmail.com' && password == 'admin1234'){
+            window.location.href = 'C://Users//minas//Desktop//vscode (Adel//Chatbot files//chatpage.html'
+
+          }else {
+            window.location.href= 'C://Users//minas//Desktop//vscode (Adel//Chatbot files//Loginpage.html'
+          }
+       });
+
+    </script>
+    
+      
+    
+    <script src="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\query_search.js">
+    </script>
+ 
+    <footer class="footer">
+  <div class="container">
+    <div class="content">
+      <div class="u__cf"  dir="ltr">
+          <div class="footer__links">
+              <ul class="footer__link-list footer__links__custom">
+                  <li class="footer__link" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\Loading.html">Home</a>
+                  </li>
+                  <li class="footer__link" data-footer-link-type="custom">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="C:\Users\minas\Desktop\vscode (Adel\Chatbot files\Loginpage.html">Log In</a>
+                  </li>
+              </ul>
+              <ul class="footer__link-list footer__links__social">
+                  <li class="footer__link footer__link__twitter" data-footer-link-type="twitter">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://twitter.com/">
+                      <svg viewBox="0 0 32 32" version="1.0" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" /></svg>
+
+</a>                  </li>
+                  <li class="footer__link footer__link__linkedin" data-footer-link-type="linkedin">
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="https://linkedin.com/">
+                      <svg viewBox="0 0 32 32" version="1.0" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="23" width="7" y="9"/><path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z"/><circle cx="3.5" cy="3.5" r="3.5"/></svg>
+
+</a>                  </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+  </body>
+
+</html>

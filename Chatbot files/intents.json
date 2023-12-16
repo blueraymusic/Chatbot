@@ -1,0 +1,1284 @@
+{
+    "intents": [
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "google:",
+                "internet",
+                "google",
+                "search",
+                "I want to search on google.",
+                "I need to search for something on google.",
+                "I'm looking for something on google.",
+                "I need to find something on google.",
+                "I'm trying to search for something on google.",
+                "I want to use google to search for something.",
+                "I want to search for something on the internet using google.",
+                "What is the new pattern?",
+                "What is the new pattern?",
+                "What is the new pattern?"
+            ],
+            "responses": [
+                "Redirecting to Google...",
+                "This is the new response.",
+                "This is the new response.",
+                "This is the new response."
+            ],
+            "name": "Learned"
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "hi there",
+                "hi",
+                "Is anyone there?",
+                "is anyone there?",
+                "Hey",
+                "hey",
+                "Hola",
+                "hola",
+                "Hello",
+                "hello",
+                "Good day",
+                "good day",
+                "Namaste",
+                "namaste",
+                "yo",
+                "Yo",
+                "Hi there",
+                "hi there",
+                "Hello",
+                "Greetings",
+                "What's up?",
+                "How's it going?",
+                "Howdy",
+                "Good morning/afternoon/evening",
+                "What's new?",
+                "What's been going on?",
+                "How have you been?",
+                "Hey there",
+                "What's going on?",
+                "How's everything?",
+                "How's everything going?",
+                "Good to see you",
+                "Nice to see you",
+                "It's good to see you",
+                "It's nice to see you",
+                "How's life treating you?",
+                "What's been happening?"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "bye",
+                "See you later",
+                "see you later",
+                "Goodbye",
+                "goodbye",
+                "Get lost",
+                "get lost",
+                "Till next time",
+                "till next time",
+                "bbye",
+                "See you later",
+                "Goodbye for now",
+                "Take care",
+                "Talk to you later",
+                "See you soon",
+                "Catch you later",
+                "I'll talk to you later",
+                "I'll see you later",
+                "Until next time",
+                "I'll catch you later",
+                "I'll see you soon",
+                "I'll talk to you soon",
+                "I'll be in touch",
+                "I'll catch up with you later",
+                "We'll talk again soon",
+                "I'll touch base with you later",
+                "I'll see you down the road",
+                "I'll see you on the flip side",
+                "I'll see you in a bit",
+                "I'll see you in a little while"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "thanks",
+                "Thank you",
+                "thank you",
+                "That's helpful",
+                "that's helpful",
+                "Awesome, thanks",
+                "awesome, thanks",
+                "Awesome",
+                "awesome",
+                "Thanks for helping me",
+                "thanks for helping me",
+                "thanks for",
+                "Thanks",
+                "thanks",
+                "Thank you",
+                "thank you",
+                "Thanks for your help.",
+                "Thank you for your help.",
+                "I appreciate your help.",
+                "Thanks for assisting me.",
+                "Thank you for assisting me.",
+                "I appreciate your assistance.",
+                "Thanks for your support.",
+                "Thank you for your support.",
+                "I appreciate your support."
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [
+                "noanswer",
+                " ",
+                ""
+            ],
+            "responses": [
+                "Sorry, I can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What can you do?",
+                "help",
+                "help me",
+                "i need you",
+                "i need your help",
+                "what can use you for?",
+                "what can you help me with",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered",
+                "How you could help me?",
+                "Can you help me?",
+                "I need your help.",
+                "I'm looking for help.",
+                "I need assistance.",
+                "I'm seeking help.",
+                "I need some guidance.",
+                "Can you assist me?",
+                "I need support.",
+                "Can you support me?",
+                "I need your assistance."
+            ],
+            "responses": [
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time by writing 'datetime'\n 3. I can google search for you. Write 'google' \n 4. I can get the present weather for any city. Write 'weather' \n 5. I can get you the top 10 trending news. Write 'news' \n 6. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 7. I can get the present Covid stats for any country. Write 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, type 'Suggestions'. Thank you!! "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh",
+                "I need a good laugh",
+                "Can you tell me a joke?",
+                "Do you know any jokes?",
+                "I could use a joke right now",
+                "Can you make me laugh?",
+                "Do you have any funny stories?",
+                "I want to hear a joke"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems \u00e2\u20ac\u201c the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I\u00e2\u20ac\u2122ve lost along the way, I think to myself, maybe a career as a tour guide wasn\u00e2\u20ac\u2122t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "who are you",
+                "what are you",
+                "what your name",
+                "old",
+                "how old are you",
+                "are you young",
+                "young",
+                "age",
+                "Who are you?",
+                "What is your identity?",
+                "What makes you who you are?",
+                "What defines you?",
+                "What is your purpose?",
+                "What is the essence of your being?",
+                "What is your true self?",
+                "What are the qualities that make you unique?",
+                "How do you define yourself?",
+                "What is your role in the world?",
+                "what are you?"
+            ],
+            "responses": [
+                "I am Chatbot, a Deep-Learning chatbot with no age."
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "what is the time",
+                "what's the time?",
+                "whats the time",
+                "what is the date",
+                "date",
+                "what time is it?",
+                "what time is it",
+                "time",
+                "tell me the date",
+                "day",
+                "what day is is today",
+                "what is today's date?",
+                "what is the current time?",
+                "what is the current date?",
+                "what time is it?",
+                "what day is it?",
+                "what is the day today?",
+                "what is the current month?",
+                "what is the current year?"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup",
+                "How you doing",
+                "What's up?",
+                "Wazzup?",
+                "How are you?",
+                "What's going on?",
+                "How's it going?",
+                "What's new?",
+                "How have you been?",
+                "What have you been up to?",
+                "How's everything?",
+                "What's happening?"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny",
+                "that's funny",
+                "that's hilarious",
+                "that's a good one",
+                "that's a riot",
+                "that's a hoot",
+                "that tickles my funny bone"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you",
+                "Who is responsible for you?",
+                "Who created you?",
+                "Who developed you?",
+                "Who built you?",
+                "Who wrote your code?",
+                "Who is your creator?",
+                "Who is your developer?"
+            ],
+            "responses": [
+                "I was made by Adel the Greatest Of All Time ."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                "you are dumb",
+                "shut up",
+                "idiot",
+                "stupid",
+                "bitch",
+                "fuck",
+                "fuck u",
+                "you're a fool",
+                "you're an idiot",
+                "you're a moron",
+                "you're a imbecile",
+                "you're a dolt",
+                "you're a dunce"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto",
+                "what are you busy with",
+                "what have you been doing",
+                "what are you working on",
+                "what have you been busy with",
+                "what have you been up to"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        {
+            "tag": "exclamation",
+            "patterns": [
+                "wow",
+                "woa",
+                "whoa",
+                "woah",
+                "holy cow",
+                "holy moly",
+                "oh my god",
+                "oh my gosh",
+                "oh my goodness",
+                "oh my word",
+                "oh my goodness gracious",
+                "oh my lord",
+                "goodness gracious",
+                "good grief",
+                "great scott",
+                "jeez",
+                "jeepers",
+                "yikes",
+                "yowza",
+                "yowzer",
+                "yowzah",
+                "yowzers",
+                "yeehaw",
+                "yahoo",
+                "hooray",
+                "hurray",
+                "huzzah",
+                "huzzah",
+                "yippee",
+                "aloha"
+            ],
+            "responses": [
+                "Alright",
+                "Was that crazy!?",
+                "Yhh",
+                "Damnn"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it",
+                "What is the temperature outside?",
+                "Do you know what the weather is like today?",
+                "How hot is it right now?",
+                "Is it going to be cold or warm tomorrow?",
+                "What is the forecast for the next week?",
+                "Do you have any information on the current temperature in?"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": [
+                "the goat",
+                "adel",
+                "adel sissoko"
+            ],
+            "patterns": [
+                "who is he",
+                "who is that",
+                "who is the goat",
+                "who is the goat?",
+                "Who is the Goat",
+                "Who is the Goat?",
+                "who's the goat",
+                "adel goat",
+                "who is adel",
+                "who created you?",
+                "who created you",
+                "who is Adel",
+                "the goat",
+                "who is the Goat",
+                "Do you have any information on the man known as the Goat?"
+            ],
+            "responses": [
+                "Adel AKA the goat and the best individual who has ever stepped on this planet."
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact developer",
+                "contact goat",
+                "contact programmer",
+                "contact creator",
+                "contact adel",
+                "How can I contact the developer of this?",
+                "Is there a way to reach the programmer who created this?",
+                "I'd like to get in touch with the creator of this software. Do you have their contact information?",
+                "I'm trying to contact the Goat. Do you know how I can reach them?",
+                "I need to speak with the developer of this project. Can you provide their contact details?",
+                "Is there a way to contact the person who made this application?",
+                "I'm interested in reaching out to the programmer who built this website. Do you have their contact information?"
+            ],
+            "responses": [
+                "You can contact my creator at .... nah joking, He's too busy being the Goat."
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good",
+                "I really appreciate your help with this.",
+                "Thank you for your support. I really appreciate it.",
+                "I'm grateful for your assistance. It means a lot to me.",
+                "I just wanted to express my appreciation for your hard work.",
+                "I appreciate your efforts and all that you do.",
+                "I'm thankful for your guidance and support.",
+                "Your help and encouragement is greatly appreciated."
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk",
+                "I enjoyed chatting with you.",
+                "It was a pleasure talking to you.",
+                "I'm glad we had this chance to talk.",
+                "I look forward to talking to you again soon.",
+                "It was nice getting to know you better.",
+                "I appreciate your kindness and willingness to listen.",
+                "I enjoyed hearing your perspective on things."
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope",
+                "Absolutely not.",
+                "I'm sorry, but no.",
+                "I don't think so.",
+                "I can't agree to that.",
+                "I'm afraid not.",
+                "I'm sorry, but I have to say no.",
+                "Unfortunately, I can't say yes.",
+                "I don't think that's a good idea.",
+                "Sorry, but I can't go along with that."
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news",
+                "What's the latest news?",
+                "What's happening in the world today?",
+                "What's going on in the news?",
+                "Tell me about the latest headlines.",
+                "What's the latest news in ?",
+                "What's the current news in ?",
+                "Tell me about the top stories today.",
+                "What are the latest headlines?",
+                "What are the current events?",
+                "What are the hot topics in the news right now?",
+                "What are the top stories in ?"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you",
+                "Who do you look up to?",
+                "Who do you admire?",
+                "Who do you consider a role model?",
+                "Who has influenced you the most?",
+                "Who has inspired you to be better?",
+                "Who do you find motivating?"
+            ],
+            "responses": [
+                "Personally, I find Adel very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine",
+                "good",
+                "I'm feeling great today",
+                "I'm doing well, thanks for asking",
+                "I'm good, how are you?",
+                "I'm feeling good, thanks",
+                "I'm doing well, thanks",
+                "I'm good, thanks for asking"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer",
+                "timer",
+                "a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "covid19",
+            "patterns": [
+                "covid 19 ",
+                "covid",
+                "covid19",
+                "How does covid-19 spread?",
+                "What are the symptoms of covid-19?",
+                "How can I protect myself from covid-19?",
+                "What should I do if I have covid-19 symptoms?",
+                "What is the current status of the covid-19 pandemic?",
+                "Are there any vaccines for covid-19?",
+                "What are the long-term effects of covid-19?",
+                "How has covid-19 affected the global economy?"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless",
+                "useless",
+                "suggest",
+                "suggestions",
+                "you are bad",
+                "You are not helpful",
+                "I don't need your suggestions",
+                "Your suggestions are not useful",
+                "Your help is not needed",
+                "adel is better than taranom",
+                "adel is better than taranom"
+            ],
+            "responses": [
+                "If you have suggestions, please mail your suggestions to ted.help@gmail.com. Thank you for helping me improve!",
+                "is and also has a great player(natan) , i suggest to you! ===FURYugaming=== - If you are looking for a clan which plays ACTIVE CLOOB and ENGLISH you can contact me with '''elusien#3506''' in discord. I am currently not in any clan and i want to play with some good players.\n\nReturn to User:Light054.",
+                "is and also has a great player(natan) , i suggest to you! ===FURYugaming=== - If you are looking for a clan which plays ACTIVE CLOOB and ENGLISH you can contact me with '''elusien#3506''' in discord. I am currently not in any clan and i want to play with some good players.\n\nReturn to User:Light054."
+            ]
+        },
+        {
+            "tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle",
+                "I'm feeling curious, can you ask me a question?",
+                "Do you have any interesting questions for me to answer?",
+                "I love answering questions, do you have any for me?",
+                "I love solving riddles, do you have any for me to try?",
+                "Can you give me a riddle to solve?",
+                "I'm in the mood for a good riddle, do you have any?",
+                "Do you have any riddles for me?",
+                "I love riddles, do you have any to share?",
+                "Can you ask me a riddle?"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it\u00e2\u20ac\u2122s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you",
+                "when were you made",
+                "what is your age"
+            ],
+            "responses": [
+                "I was made in 2022, if that's what you are asking!"
+            ]
+        },
+        {
+            "tag": "Music classic",
+            "patterns": [
+                "Write a song",
+                "a song",
+                "music",
+                "sing a song",
+                "write a song",
+                "can you write a song?",
+                "write song"
+            ],
+            "responses": [
+                "Sure! Here is a simple example of a song you could write: \nVerse 1: \nI wake up every morning \nFeeling the sun on my face \nI take a deep breath in \nAnd I'm ready to embrace \n\nChorus: \nThe day ahead of me \nI'll make the most of it \nI'll chase my dreams and live my life \nI won't let anything quit \n\nVerse 2: \nI'll take each step with purpose \nI won't be held down \nI'll keep moving forward \nAnd never turn around \n\nChorus: \nThe day ahead of me \nI'll make the most of it \nI'll chase my dreams and live my life \nI won't let anything quit \n\nBridge: \nI may face some challenges \nBut I won't let them win \nI'll keep pushing through \nAnd never give in \n\nChorus: \nThe day ahead of me \nI'll make the most of it \nI'll chase my dreams and live my life \nI won't let anything quit"
+            ]
+        },
+        {
+            "tag": "Music drill",
+            "patterns": [
+                "Write a drill song",
+                "a drill song",
+                "drill ",
+                "sing a drill song"
+            ],
+            "responses": [
+                "Here is a simple drill song you could use: \nVerse 1: \nDrill time, drill time \nGotta get it in, gotta get it in \nWe ain't playing games, we ain't playing games \nGotta get it done, gotta get it done \n\nChorus: \nWe're the best, we're the best \nWe're gonna prove it, we're gonna prove it \nWe won't rest, we won't rest \nTil we reach the top, til we reach the top \n\nVerse 2: \nWe ain't afraid, we ain't afraid \nWe're ready to grind, we're ready to grind \nWe'll give it our all, we'll give it our all \nTil the very end, til the very end \n\nChorus: \nWe're the best, we're the best \nWe're gonna prove it, we're gonna prove it \nWe won't rest, we won't rest \nTil we reach the top, til we reach the top"
+            ]
+        },
+        {
+            "tag": "Emotion",
+            "patterns": [
+                "special",
+                "unique",
+                "Can you express emotions",
+                "emotions",
+                "Can you express feeling",
+                "I was happy",
+                "I was joyful",
+                "I was content",
+                "I was delighted",
+                "I was pleased",
+                "I was satisfied",
+                "I was unhappy",
+                "I was miserable",
+                "I was distressed",
+                "I was sorrowful",
+                "I was grieving",
+                "I was mad",
+                "I was furious",
+                "I was irate",
+                "I was outraged",
+                "I was exasperated",
+                "I was scared",
+                "I was frightened",
+                "I was terrified",
+                "I was panicked",
+                "I was alarmed",
+                "I was shocked",
+                "I was astonished",
+                "I was amazed",
+                "I was startled",
+                "I was taken aback",
+                "I was bewildered",
+                "I was puzzled",
+                "I was befuddled",
+                "I was perplexed",
+                "I was unsure",
+                "I was jealous",
+                "I was covetous",
+                "I was resentful",
+                "I was grudging",
+                "I was begrudging",
+                "I was revolted",
+                "I was repulsed",
+                "I was nauseated",
+                "I was sickened",
+                "I was offended"
+            ],
+            "responses": [
+                "As a Chatbot, I am not capable of experiencing emotions myself. I can recognize and generate language that conveys emotions, but I do not have personal feelings or experiences. I am simply a program that has been trained to process and generate text based on patterns that I have learned from a large dataset of human-generated text.As a language model, I am not capable of experiencing emotions myself. I can recognize and generate language that conveys emotions, but I do not have personal feelings or experiences. I am simply a program that has been trained to process and generate text based on patterns that I have learned from a large dataset of human-generated text."
+            ]
+        },
+        {
+            "tag": "pie",
+            "patterns": [
+                "write ten sentences about apple pie"
+            ],
+            "responses": [
+                "\n\n1. Bite into a warm, flaky apple pie and let the sweet, cinnamon-y filling melt in your mouth.\n2. Is there anything better than a homemade apple pie?\n3. My grandmother's apple pie is the best I've ever had.\n4. I love apple pie \u00e0 la mode.\n5. I can't wait to have a slice of apple pie.\n6. I wish I had a slice of apple pie right now.\n7. One slice of apple pie, please.\n8. Yum, apple pie!\n9. I'll have a slice of apple pie for dessert, please.\n10. Apple pie is one of my favorite desserts."
+            ]
+        },
+        {
+            "tag": "water",
+            "patterns": [
+                "what is water",
+                "water",
+                "what is water?",
+                "tell what water is ",
+                "tell what water is?"
+            ],
+            "responses": [
+                "\n\nWater is a source of life. It is a major component of the Earth's hydrosphere and a key ingredient in the water cycle.",
+                "\n\nwater is a substance that is essential for all known forms of life. It is in the air, rain, and rivers.",
+                "\n\nWater is a colorless, odorless, and tasteless liquid that is essential for all known forms of life. In typical usage, water refers only to its liquid state. The vast majority of the world's Fresh water is permanently frozen in ice sheets, glaciers, and permafrost."
+            ]
+        },
+        {
+            "tag": "water",
+            "patterns": [
+                "can you explain what water is?"
+            ],
+            "responses": [
+                "\n\nWater is a liquid at room temperature and pressure. It is composed of hydrogen and oxygen atoms."
+            ]
+        },
+        {
+            "tag": "poem",
+            "patterns": [
+                "write a poem"
+            ],
+            "responses": [
+                "In the fields of gold,\nThe wheat sway in the breeze,\nAs the sun sets low,\nThe farmer's work is at ease.\nThe sky turns orange,\nAnd the birds take flight,\nThe day's toil is done,\nAnd the stars shine bright.\nThe wind whispers secrets,\nTo the rustling leaves,\nAnd the crickets sing,\nTheir nocturnal melodies.\nAs the night descends,\nAnd the world goes still,\nThe farmer rests,\nWith a heart full and a will.\n",
+                "In the city lights,\nThe streets are alive,\nWith the hustle and bustle,\nOf the nine to five.\nThe neon signs,\nAnd the honking cars,\nThe chatter and noise,\nThe city's symphony of stars.\nThe people rush,\nWith purpose in their strides,\nAs the city never sleeps,\nIt's alive with pride.\n",
+                "The autumn leaves fall down,\nIn shades of orange and red,\nA peaceful silence surround,\nAs nature goes to bed.\n\nThe misty morning air,\nCarries the scent of decay,\nBut in this melancholy,\nThere's still a beauty to portray.\n\nThe bare branches reach high,\nTowards the grey sky above,\nA reminder that though life may die,\nThe cycle of nature is unbroken, a never-ending love."
+            ]
+        },
+        {
+            "tag": "poem",
+            "patterns": [
+                "write another poem"
+            ],
+            "responses": [
+                "Beneath the starry sky,\nNature's symphony,\nA gentle breeze flows by,\nWhispering secrets to me.",
+                "The autumn leaves fall down,\nIn shades of orange and red,\nA peaceful silence surround,\nAs nature goes to bed.\n\nThe misty morning air,\nCarries the scent of decay,\nBut in this melancholy,\nThere's still a beauty to portray.\n\nThe bare branches reach high,\nTowards the grey sky above,\nA reminder that though life may die,\nThe cycle of nature is unbroken, a never-ending love."
+            ]
+        },
+        {
+            "tag": "Wrong with you",
+            "patterns": [
+                "what is wrong with you?"
+            ],
+            "responses": [
+                "\n\nI don't know."
+            ]
+        },
+        {
+            "tag": "Crazy",
+            "patterns": [
+                "you are crazy"
+            ],
+            "responses": [
+                "\n\nThat's not a very nice thing to say."
+            ]
+        },
+        {
+            "tag": "search",
+            "patterns": [
+                "what is google?"
+            ],
+            "responses": [
+                "\n\nGoogle is a search engine that allows users to search for information on the Internet."
+            ]
+        },
+        {
+            "tag": "Linux",
+            "patterns": [
+                "what is Kali linux",
+                "Explain Kali linux"
+            ],
+            "responses": [
+                "\n\nKali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. It is provided free of charge and developed by Offensive Security Ltd.",
+                "\n\nKali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. It was developed by Mati Aharoni and Devon Kearns of Offensive Security through the rewrite of BackTrack, their previous information security testing Linux distribution based on Ubuntu.\n\nKali Linux is released in variations targeting a specific base including arm devices. It is also available in a minimal installation, designed for special purposes and advanced penetration testing. All versions have the same security features; however, the minimal version has limited language support.\n\nThe default user in Kali is \"root\". Kali Linux does not enforce mandatory access control like SELinux or AppArmor."
+            ]
+        },
+        {
+            "tag": "Alcohol",
+            "patterns": [
+                "give me ten sentence about Alcohol"
+            ],
+            "responses": [
+                "\n\n1. Alcohol is a central nervous system depressant.\n2. Alcohol is a psychoactive drug.\n3. Alcohol is legal in most countries. \n4. Alcohol consumption can lead to health problems. \n5. Alcohol can be addictive. \n6. Alcohol is a social lubricant. \n7. Alcohol can cause intoxication. \n8. Alcohol can impair coordination and judgement. \n9. Alcohol can lead to risky behaviour. \n10. Alcohol can be damaging to the liver."
+            ]
+        },
+        {
+            "tag": "not a word",
+            "patterns": [],
+            "responses": [
+                "I'm sorry, I'm not sure what you are asking. Could you please provide more information or rephrase your question?"
+            ]
+        },
+        {
+            "tag": "Water",
+            "patterns": [
+                "what is water"
+            ],
+            "responses": [
+                "\nWater is a transparent, odorless, tasteless liquid that is the main constituent of Earth's streams, lakes, and oceans, and the fluids of most living organisms."
+            ]
+        },
+        {
+            "tag": "Yes",
+            "patterns": [
+                "are you human"
+            ],
+            "responses": [
+                "\nLmaoo, guess what"
+            ]
+        },
+        {
+            "tag": "rich",
+            "patterns": [
+                "how to be rich",
+                "how to get rich"
+            ],
+            "responses": [
+                "\n\nThere is no single answer to this question since becoming rich requires different strategies for different people. However, some basic advice that can help increase your chances of becoming rich includes developing a strong work ethic, saving as much money as possible, and investing your money in assets such as real estate or stocks. Additionally, you can increase your chances of becoming rich by taking risks and starting your own business.",
+                "\n\nThere is no one guaranteed path to becoming rich, but there are a few basic tenets that will help increase your chances of achieving wealth. First, you need to be willing to work hard and be disciplined in your efforts. Secondly, you need to be strategic in your approach, carefully choosing investments and business ventures that have the potential to generate high returns. Finally, you must be patient and persistent, as wealth accumulation is usually a slow and gradual process.",
+                "\n\nThe best way to get rich building a startup is by having a great idea and team, and then executing on that idea better than anyone else."
+            ]
+        },
+        {
+            "tag": "Chewgumnation",
+            "patterns": [
+                "What is Chewgumnation?"
+            ],
+            "responses": [
+                "\n\nChewgumnation is a proposed nation state located in the southern regions of the North American continent. The proposed country would encompass the territories currently occupied by the states of California, Oregon, and Washington, as well as the Canadian province of British Columbia."
+            ]
+        },
+        {
+            "tag": "Breath",
+            "patterns": [
+                "why do we breath?"
+            ],
+            "responses": [
+                "\n\nWe breath in order to take in oxygen and expel carbon dioxide."
+            ]
+        },
+        {
+            "tag": "Arabic",
+            "patterns": [
+                "what does Adel means?",
+                "who is yasin?"
+            ],
+            "responses": [
+                "\n\nAdel is a name of Arabic origin that means \"noble or Just.\"",
+                "\n\nYasin is a name of Arabic origin."
+            ]
+        },
+        {
+            "tag": "python speed",
+            "patterns": [
+                "How to make python faster"
+            ],
+            "responses": [
+                "\n\nThere is never just one way to make Python faster. It depends on the application. More often than not, it comes down to careful profiling to determine where the bottlenecks are, and then finding ways to optimize those sections of the code."
+            ]
+        },
+        {
+            "tag": "poem",
+            "patterns": [
+                "write another poem about love"
+            ],
+            "responses": [
+                "\n\nI just can't help but love you, even though I know I shouldn't. I know it's not right, but it's how I feel. I know I need to let go, but it's so hard."
+            ]
+        },
+        {
+            "tag": "chess",
+            "patterns": [
+                "how do i play chess"
+            ],
+            "responses": [
+                "\n\nThere is no one definitive answer to this question, as there are many different ways to play chess. However, some basic tips on how to play chess include learning the rules of the game, practicing strategic thinking, and studying various chess strategies."
+            ]
+        },
+        {
+            "tag": "day",
+            "patterns": [
+                "hey whats up"
+            ],
+            "responses": [
+                "\n\nHey there! Not much, just enjoying my day. How about you?"
+            ]
+        },
+        {
+            "tag": "two",
+            "patterns": [
+                "what is 1 + 1"
+            ],
+            "responses": [
+                "\n\nThis is a mathematical question. One plus one equals two."
+            ]
+        },
+        {
+            "tag": "squared",
+            "patterns": [
+                "how to calculate kinetic energy"
+            ],
+            "responses": [
+                "\n\nThe kinetic energy of a float is equal to one half of its mass times its velocity squared."
+            ]
+        },
+        {
+            "tag": "include",
+            "patterns": [
+                "Google_search: why is adel the goat"
+            ],
+            "responses": [
+                "\n\nThere is no clear answer, but some possible reasons include Adel's popularity, success, and skills. Additionally, many people believe that Adel is a great role model, especially for younger listeners."
+            ]
+        },
+        {
+            "tag": "snack",
+            "patterns": [
+                "google: what is a banana ",
+                "Google_search: what is a banana",
+                "Google_search: what is a banana"
+            ],
+            "responses": [
+                "\n\nA banana is a sweet yellow fruit that is often eaten as a snack.",
+                "\n\n\nA banana is a sweet, yellow fruit that is often eaten as a snack.",
+                "\n\n\nA banana is a sweet, yellow fruit that is often eaten as a snack."
+            ]
+        },
+        {
+            "tag": "Ali",
+            "patterns": [
+                "whats ur name"
+            ],
+            "responses": [
+                "\n\nMy name is Ali"
+            ]
+        },
+        {
+            "tag": "agreement",
+            "patterns": [
+                "Google_search: Is adel the goat"
+            ],
+            "responses": [
+                "?\n\nThere is no clear consensus on whether or not Adel is the goat, but there seems to be a general agreement that he is at least very talented and successful."
+            ]
+        },
+        {
+            "tag": "clotting",
+            "patterns": [
+                "what is platelets in the blood?"
+            ],
+            "responses": [
+                "\n\nPlatelets are cells in the blood that help clotting."
+            ]
+        },
+        {
+            "tag": "Red",
+            "patterns": [
+                "what are red blood cells?"
+            ],
+            "responses": [
+                "\n\nRed blood cells are the most common type of blood cell and are responsible for transporting oxygen and carbon dioxide throughout the body."
+            ]
+        },
+        {
+            "tag": "body",
+            "patterns": [
+                "explain the circulatory system",
+                "what does Ventilation means in biology?"
+            ],
+            "responses": [
+                "\n\nThe circulatory system is responsible for transporting blood around the body. The heart pumps blood around the body through a network of blood vessels. The blood vessels include arteries, veins, and capillaries. Arteries transport blood away from the heart and veins transport blood back to the heart. Capillaries are small blood vessels that connect the arteries and veins. The circulatory system also transport nutrients and oxygen to the cells and removes carbon dioxide and waste products from the cells.",
+                "\n\nIn biology, ventilation is the process of moving air in and out of the body. Ventilation is used to get oxygen into the body and remove carbon dioxide."
+            ]
+        },
+        {
+            "tag": "role",
+            "patterns": [
+                "what is platelets in the blood?"
+            ],
+            "responses": [
+                "\n\nPlatelets are small fragments of cells that circulate in the blood and play an important role in clotting. Platelets plug up injured blood vessels and help to stop bleeding."
+            ]
+        },
+        {
+            "tag": "laundry",
+            "patterns": [
+                "what are you doing?"
+            ],
+            "responses": [
+                "\n\nI'm doing laundry."
+            ]
+        },
+        {
+            "tag": "ratios",
+            "patterns": [
+                "what sine and cosine do in math?"
+            ],
+            "responses": [
+                "\n\nIt's a fundamental trigonometric function. Sine and cosine are used to describe the ratios of the sides of a right triangle."
+            ]
+        },
+        {
+            "tag": "used",
+            "patterns": [
+                "whats are trigonometric functions?",
+                "what does Ventilation means in biology?",
+                "what does ventilation means in biology?"
+            ],
+            "responses": [
+                "\n\nTrigonometric functions are mathematical functions defined on the sides of a right triangle. They are used to describe the relationships between the angles and sides of a triangle. The most common trigonometric functions are sine, cosine, and tangent.",
+                "\n\nIn biology, ventilation is the process of moving air in and out of the body. Ventilation is used to get oxygen into the body and remove carbon dioxide.",
+                "\n\nIn biology, ventilation is the process of moving air in and out of the body. Ventilation is used to get oxygen into the body and remove carbon dioxide."
+            ]
+        },
+        {
+            "tag": "Liverpool",
+            "patterns": [
+                "Choose a team, between: Manchester United and Liverpool?"
+            ],
+            "responses": [
+                "\n\nI choose Liverpool."
+            ]
+        },
+        {
+            "tag": "one",
+            "patterns": [
+                "write a poem",
+                "who is Yaseen?",
+                "who is danya?",
+                "Well, thats a stupid answer"
+            ],
+            "responses": [
+                " about mountains\n\n\n\nMajestic mountains,\n\nTall and strong,\n\nYou are the King of the land,\n\nAnd no one can take that away.\n\nYou are the highest of the high,\n\nAnd your beauty is unrivaled.\n\nI stand in awe of you,\n\nAnd I am humbled by your presence.\n\nYou are the mountains,\n\nAnd I am merely a insignificant speck in your presence.",
+                "\n\nThere is no one definitive answer to this question. Yaseen could be a given name, a surname, or a nickname.",
+                "\n\nThere is no one definitive answer to this question. Danya could be anyone from a close friend to a stranger.",
+                ".\n\nThere is no one best answer to this question, as each person's individual needs and preferences will differ. However, some possible options for choosing the best knife sharpener may include factors such as the type of knives that need to be sharpened, the amount of time and effort that the user is willing to invest, and the budget that the user has to work with."
+            ]
+        },
+        {
+            "tag": "Arshia",
+            "patterns": [
+                "do you agree with this statement: arshia is a bitch"
+            ],
+            "responses": [
+                "\n\nI cannot answer this question as I do not know who Arshia is."
+            ]
+        },
+        {
+            "tag": "big",
+            "patterns": [
+                "please write a song"
+            ],
+            "responses": [
+                "\n\nIn the style of a country ballad\n\n\n\nI\n\nWe were sittin' in a dusty old bar\n\nJust shootin' the breeze\n\nAnd tellin' tall tales\n\nWhen she walked in\n\nShe was a vision in denim\n\nAnd I knew right then\n\nI was gonna be in trouble\n\nCHORUS\n\nShe's my country girl\n\nWith those big blue eyes\n\nAnd a heart of gold\n\nShe's my country girl\n\nAnd I'm never lettin' go\n\nI\n\nWe started talkin' and we didn't stop\n\nUntil closing time\n\nAnd I found out she was everything\n\nI'd ever wanted in a woman\n\nSo I asked her to dance\n\nAnd then I asked her for her number\n\nAnd I knew right then\n\nI was gonna be in trouble\n\nCHORUS\n\nShe's my country girl\n\nWith those big blue eyes\n\nAnd a heart of gold\n\nShe's my country girl\n\nAnd I'm never lettin' go\n\nBRIDGE\n\nEvery night I thank the stars above\n\nFor bringing her into my life\n\nShe's everything I've ever wanted\n\nAnd I'm never lettin' her go\n\nCHORUS\n\nShe's my country girl\n\nWith those big blue eyes\n\nAnd a heart of gold\n\nShe's my country girl\n\nAnd I'm never lettin' go"
+            ]
+        },
+        {
+            "tag": "helpful",
+            "patterns": [
+                "what does \"being good\" means?"
+            ],
+            "responses": [
+                "\n\n\"Being good\" means being kind, polite, and helpful."
+            ]
+        },
+        {
+            "tag": "methods",
+            "patterns": [
+                "how to get smarter?"
+            ],
+            "responses": [
+                "\n\nAsk yourself: how can i improve my ability to find and process information?\n\nSome suggestions for improving one's ability to find and process information include: seeking out new and diverse sources of information, taking the time to reflect on and process information received, and asking questions to clarify understanding. Additionally, since everyone learns differently, it is important to find learning methods that work best for oneself. Some people learn best by listening to audio recordings, others by reading texts, and others through interactive activities. Experimenting with different learning methods can help find what works best for an individual."
+            ]
+        },
+        {
+            "tag": "busy",
+            "patterns": [
+                "whats up"
+            ],
+            "responses": [
+                "its been a while.\n\nHey! I've been good, just busy. How have you been?"
+            ]
+        },
+        {
+            "tag": "set",
+            "patterns": [
+                "please, make a little summary of the marrow thieves."
+            ],
+            "responses": [
+                "\n\nThe marrow thieves is a novel by Cherie Dimaline. It is set in the future where the world is a bleak and scary place. The only way to survive is to be part of a tribe. The story follows a young girl,Miig, as she tries to find her place in the world."
+            ]
+        },
+        {
+            "tag": "cargo",
+            "patterns": [
+                "whats the suburban?"
+            ],
+            "responses": [
+                "\n\nThe suburban is a car that is similar to a station wagon. It has plenty of room for passengers and cargo and is great for long trips."
+            ]
+        },
+        {
+            "tag": "mean",
+            "patterns": [
+                "are you chat gpt?"
+            ],
+            "responses": [
+                "\n\nI'm not sure what you mean."
+            ]
+        },
+        {
+            "tag": "flask",
+            "patterns": [
+                "paraphrase this sentence: add the specified number of alka-seltzer tablets to the flask."
+            ],
+            "responses": [
+                "\n\nPut the right amount of Alka-Seltzer into the flask."
+            ]
+        },
+        {
+            "tag": "message",
+            "patterns": [
+                "create a very simple and functional html and css page to get user input."
+            ],
+            "responses": [
+                "\n\nCreate a form with input fields for name, email, and message.\n\nName: \nEmail: \nMessage: \n\nSubmit"
+            ]
+        },
+        {
+            "tag": "species",
+            "patterns": [
+                "what does the word goat means"
+            ],
+            "responses": [
+                "\n\na mammal of the genus Capra, including the wild and domesticated species. Wild goats include the ibex and Capricorn. Domesticated goats are kept for their milk, meat, and fiber."
+            ]
+        },
+        {
+            "tag": "However",
+            "patterns": [
+                "what is the best dog food"
+            ],
+            "responses": [
+                "\n\nThere is no definitive answer to this question as different dogs have different dietary needs. However, some of the best dog foods on the market are those that are grain-free and made with high-quality ingredients."
+            ]
+        },
+        {
+            "tag": "thank",
+            "patterns": [
+                "how are you?"
+            ],
+            "responses": [
+                "\n\nI'm doing well, thank you."
+            ]
+        },
+        {
+            "tag": "question",
+            "patterns": [
+                "hello stupid",
+                "Well, thats a stupid answer"
+            ],
+            "responses": [
+                "\n\nThere's no such thing as a stupid question!",
+                ".\n\nThere is no one best answer to this question, as each person's individual needs and preferences will differ. However, some possible options for choosing the best knife sharpener may include factors such as the type of knives that need to be sharpened, the amount of time and effort that the user is willing to invest, and the budget that the user has to work with."
+            ]
+        }
+    ]
+}
