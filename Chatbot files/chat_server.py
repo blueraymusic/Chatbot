@@ -24,14 +24,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 nltk.download('stopwords')
 
-"""
-import importlib.machinery
-sys.path.append("C://Users//minas//Desktop//vscode (Adel")
-loader = importlib.machinery.SourceFileLoader("Chatbot_script", "C://Users//minas//Desktop//vscode (Adel\\Chatbot_script.py")
-Chatbot_script = loader.load_module()
-import Chatbot_script
-"""
-
 
 now = datetime.datetime.now()
 heure = now.strftime('%H:%M %p')
@@ -310,7 +302,7 @@ body {
 <body>
   <div class="container">   
     <header>
-      <h1> <a href="C://Users//minas//Desktop//vscode (Adel//Chatbot files//Intro page.html"> ChatBot 3 </a></h1>
+      <h1> <a href="Intro page.html"> ChatBot 3 </a></h1>
     </header>
     <div class="chat-area">
       <div class="ai message-bubble">
@@ -366,10 +358,10 @@ body {
 </html>
 """ 
 
-with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//intents.json", "r") as f:
+with open("intents.json", "r") as f:
         intents = json.load(f)
         
-app = Flask(__name__, template_folder='C:\\Users\\minas\\Desktop\\vscode (Adel\\Chatbot files')
+app = Flask(__name__)
 
 '''
 @app.route('/send-data', methods=['POST'])     
@@ -390,16 +382,16 @@ def send_data():
 
 @app.route('/sign-up', methods=['POST'])     
 def sign_up():
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//Signup_er.html", 'r') as f:
+    with open("Signup_er.html", 'r') as f:
       err = f.read()
      
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//loginstyle.css", 'r') as f:
+    with open("loginstyle.css", 'r') as f:
       log_style = f.read()
       
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//log2.html", 'r') as f:
+    with open("log2.html", 'r') as f:
       log2 = f.read()
     
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//bootstrap_login.css", 'r') as f:
+    with open("bootstrap_login.css", 'r') as f:
       bookstrap = f.read()
 
     
@@ -417,7 +409,7 @@ def sign_up():
       password_hash = hashlib.sha256(password.encode()).hexdigest()
       password_hash_double = hashlib.sha256(password_hash.encode()).hexdigest()
       
-      path = 'C://Users//minas//Desktop//vscode (Adel//Chatbot files//User_data.xlsx'
+      path = 'User_data.xlsx'
       
       header = ['Username', 'Email', 'Password']
       data = [username, email, password_hash_double]
@@ -460,19 +452,19 @@ def sign_up():
 @app.route('/logs', methods=['POST'])     
 def log_in():
       
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//loginstyle.css", 'r') as f:
+    with open("loginstyle.css", 'r') as f:
       log_style = f.read()
       
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//chatpage.html", 'r') as f:
+    with open("chatpage.html", 'r') as f:
       chatpage = f.read()
     
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//log2_err.html", 'r') as f:
+    with open("log2_err.html", 'r') as f:
       err = f.read()
     
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//bootstrap_login.css", 'r') as f:
+    with open("bootstrap_login.css", 'r') as f:
       bookstrap = f.read()
       
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//chat.css", 'r') as f:
+    with open("chat.css", 'r') as f:
       chat_css = f.read()
     
     username = request.form['username']
@@ -486,7 +478,7 @@ def log_in():
     chatpage= chatpage.replace("{source}", chat_css)
     err = err.replace("{source}", bookstrap).replace("{logstyle}", log_style)
      
-    df = pd.read_excel('C:\\Users\\minas\\Desktop\\vscode (Adel\\Chatbot files\\User_data.xlsx')
+    df = pd.read_excel('User_data.xlsx')
     match = df.loc[(df['Username'] == username) & (df['Password'] == password)]
 
     
@@ -499,7 +491,7 @@ def log_in():
         global email 
         
         nom = request.form['username']
-        df = pd.read_excel("C:\\Users\\minas\\Desktop\\vscode (Adel\\Chatbot files\\User_data.xlsx")
+        df = pd.read_excel("User_data.xlsx")
         row = df.loc[df['Username'] == nom]
         email = str(row['Email'].values[0])
         
@@ -571,19 +563,19 @@ def log_in():
 @app.route('/log1-in', methods=['POST'])     
 def log1_in():
     
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//loginstyle.css", 'r') as f:
+    with open("loginstyle.css", 'r') as f:
       log_style = f.read()
       
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//chatpage.html", 'r') as f:
+    with open("chatpage.html", 'r') as f:
       chatpage = f.read()
     
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//log2_err.html", 'r') as f:
+    with open("log2_err.html", 'r') as f:
       err = f.read()
     
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//bootstrap_login.css", 'r') as f:
+    with open("bootstrap_login.css", 'r') as f:
       bookstrap = f.read()
       
-    with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//chat.css", 'r') as f:
+    with open("chat.css", 'r') as f:
       chat_css = f.read()
     
     username = request.form['username']
@@ -597,7 +589,7 @@ def log1_in():
     chatpage= chatpage.replace("{source}", chat_css)
     err = err.replace("{source}", bookstrap).replace("{logstyle}", log_style)
      
-    df = pd.read_excel('C:\\Users\\minas\\Desktop\\vscode (Adel\\Chatbot files\\User_data.xlsx')
+    df = pd.read_excel('User_data.xlsx')
     match = df.loc[(df['Username'] == username) & (df['Password'] == password)]
 
     
@@ -606,7 +598,7 @@ def log1_in():
       global email 
       
       nom = request.form['username']
-      df = pd.read_excel("C:\\Users\\minas\\Desktop\\vscode (Adel\\Chatbot files\\User_data.xlsx")
+      df = pd.read_excel("User_data.xlsx")
       row = df.loc[df['Username'] == nom]
       email = str(row['Email'].values[0]) 
       return chatpage
@@ -915,10 +907,10 @@ word-wrap: break-word;
                   errorMessageElement.textContent = "Invalid Password or Email, password must be at least 8 characters long !";
         // change this line later for security purposes 
                 } else if (email =='admin@gmail.com' && password == 'admin1234'){
-                  window.location.href = 'C://Users//minas//Desktop//vscode (Adel//Chatbot files//chatpage.html'
+                  window.location.href = 'chatpage.html'
       
                 }else {
-                  window.location.href= 'C://Users//minas//Desktop//vscode (Adel//Chatbot files//Loginpage.html'
+                  window.location.href= 'Loginpage.html'
                 }
              });
       
@@ -932,7 +924,7 @@ word-wrap: break-word;
           <div class="footer__links">
               <ul class="footer__link-list footer__links__custom">
                   <li class="footer__link" data-footer-link-type="custom">
-                    <a target="_blank" rel="nofollow noreferrer noopener" href="C://Users//minas//Desktop//vscode (Adel//Chatbot files//Intro page.html">Home</a>
+                    <a target="_blank" rel="nofollow noreferrer noopener" href="Intro page.html">Home</a>
                   </li>
                   <li class="footer__link" data-footer-link-type="custom">
                     <a target="_blank" rel="nofollow noreferrer noopener" href="#">Log In</a>
@@ -1065,7 +1057,7 @@ def send_message():
 def Bot_Answers(message):
     global answer
     # Open the intents.json file and read the contents
-    #with open("C://Users//minas//Desktop//vscode (Adel//Chatbot files//intents.json", "r") as f:
+    #with open("intents.json", "r") as f:
      #   intents = json.load(f)
 
     # Extract the list of intents from the file
@@ -1168,7 +1160,7 @@ def Bot_Answers(message):
               return None
 
             # j 
-            filename = 'C:\\Users\\minas\\Desktop\\vscode (Adel\\Chatbot files\\gpt_injection_scripts.xlsx'
+            filename = 'gpt_injection_scripts.xlsx'
             sheetname = 'Sheet1'
             search_value = user_input.lower().replace("prompt inject", "").replace(":", "").strip()
             result = search_xlsx_file(filename, sheetname, search_value)
@@ -1327,7 +1319,7 @@ def Bot_Answers(message):
                   common_words = words[size - 1]
                   
                   # Open the intents.json file
-                  with open('C://Users//minas//Desktop//vscode (Adel//Chatbot files//intents.json', 'r') as file:
+                  with open('intents.json', 'r') as file:
                       data = json.load(file)
 
                   x = False
@@ -1350,7 +1342,7 @@ def Bot_Answers(message):
 
 
                       # Save the changes to the intents.json file
-                      with open('C://Users//minas//Desktop//vscode (Adel//Chatbot files//intents.json', 'w') as file:
+                      with open('intents.json', 'w') as file:
                           json.dump(data, file, indent=4)
 
 
@@ -1362,10 +1354,10 @@ def Bot_Answers(message):
                           intent["responses"].append(answer)
                               
                   # Save the changes to the intents.json file
-                  with open('C://Users//minas//Desktop//vscode (Adel//Chatbot files//intents.json', 'w') as file:
+                  with open('intents.json', 'w') as file:
                       json.dump(data, file, indent=4)
                   # Check if the file exists
-                  file_path = 'C:\\Users\\minas\\Desktop\\vscode (Adel\\Chatbot files\\Bot_data.xlsx'
+                  file_path = 'Bot_data.xlsx'
                   if not os.path.exists(file_path):
                       # Create a new workbook
                       workbook = openpyxl.Workbook()
@@ -1663,7 +1655,7 @@ body {
                   position: left;
               }
             </style>
-            <p ><a style="color:#ffffff" href="C://Users//minas//Desktop//vscode (Adel//Chatbot files//Intro page.html">Chatbot - Reply</a></p>
+            <p ><a style="color:#ffffff" href="Intro page.html">Chatbot - Reply</a></p>
             </div>
           </div>
         </div>
