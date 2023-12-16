@@ -779,7 +779,7 @@ word-wrap: break-word;
       transform: scale(0.97);
     }
 </style>
-<link rel="shortcut icon" href="C://Users//minas//Desktop//Bot_face.png" sizes= "42x42">
+<link rel="shortcut icon" href="chatbot logo.png" sizes= "42x42">
 
   </head>
 
