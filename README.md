@@ -70,7 +70,8 @@ Email: admin@gmail.com
 Password: admin1234
 ```
 ## Preview
+```
 <img width="1440" alt="chatbotpic" src="https://github.com/blueraymusic/Chatbot/assets/83096078/a35e8b00-7cc7-41c8-ba55-200e460cf7e0">
-
+```
 ## Credit
 by [Hkcode](mailto:sissokoadel057@gmail.com)
