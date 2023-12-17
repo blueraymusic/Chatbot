@@ -1,6 +1,8 @@
 # Chatbot
 # Python, Javascript, Html & Css - Create a ChatGpt Chatbot Website
 
+<img width="1440" alt="chatbotpic" src="https://github.com/blueraymusic/Chatbot/assets/83096078/a35e8b00-7cc7-41c8-ba55-200e460cf7e0">
+
 Create a chatgpt chatbot website using Python as server, Javascript, Html & Css, and Openai. Python is widely used as a server-side language, handling the logic and processing on the server. It's often used with web frameworks like Flask or Django to build the backend of web applications. JavaScript is primarily a client-side language, running in the user's browser.
 It's used for enhancing user interfaces, handling events, and making asynchronous requests to the server
 
