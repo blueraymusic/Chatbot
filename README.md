@@ -41,8 +41,7 @@ OPENAI_API_KEY= YOURAPIKEY
     ```
   - Then
     ```
-    python chat_server.py
-    
+    python chat_server.py  
     ```
   - Or You can open vscode and run it from there (chat_server.py)
     
@@ -60,7 +59,6 @@ async load(): Promise<Document[]>{
     const metadata = { source: this.webPath };
     return [new Document({ pageContent: text, metadata })];
   }
-
 ```
 ## Note
 - The default password and email
