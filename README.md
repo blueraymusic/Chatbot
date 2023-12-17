@@ -62,6 +62,13 @@ async load(): Promise<Document[]>{
   }
 
 ```
+## Note
+- The default password and email
+- Only used for `development purposes` 
+```
+Email: admin@gmail.com
+Password: admin1234
+```
 
 ## Credit
 by [Hkcode](mailto:sissokoadel057@gmail.com)
