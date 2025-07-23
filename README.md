@@ -73,4 +73,4 @@ Password: admin1234
 
 
 ## Credit
-by [Hkcode](mailto:sissokoadel057@gmail.com)
+by [blueray](mailto:sissokoadel057@gmail.com)
